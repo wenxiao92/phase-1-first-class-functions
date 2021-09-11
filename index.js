@@ -1,6 +1,12 @@
-function greeting() {
-    console.log("Hello!");
+function receivesAFunction(callBack){
+    callBack();
 }
 
-function receivesAFunction(greeting){
+function returnsANamedFunction(){
+    return receivesAFunction
+}
+
+function returnsAnAnonymousFunction(){
+    return function() {
+    }
 }
